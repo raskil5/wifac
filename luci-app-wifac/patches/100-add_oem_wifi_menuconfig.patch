@@ -1,16 +1,16 @@
 diff --git a/package/kernel/mac80211/Makefile b/package/kernel/mac80211/Makefile
 --- a/package/kernel/mac80211/Makefile
 +++ b/package/kernel/mac80211/Makefile
-@@ -123,6 +123,12 @@
+@@ -143,6 +143,12 @@
  	help
- 	  Enable runtime debugging information for mac80211
- 
+ 	  Select this to see extensive information about
+ 	  the internal state of mac80211 in debugfs.
++
 +config PACKAGE_OEM_WIFI_CREDS
 +	bool "Include OEM WiFi Credential Generation"
 +	default y
 +	help
 +	  Enables automatic generation of OEM-style WiFi credentials
-+
- endmenu
  
- config MAC80211_RC_MINSTREL
+ 	config PACKAGE_MAC80211_TRACING
+ 		bool "Enable tracing (mac80211 and supported drivers)"
