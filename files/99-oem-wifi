@@ -1,9 +1,0 @@
-#!/bin/sh
-[ -f /etc/config/wireless ] && exit 0
-
-. /lib/functions/oem-wifi.sh
-
-oem_generate_credentials
-uci commit wireless
-wifi reload
-exit 0

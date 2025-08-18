@@ -1,9 +1,0 @@
-Package: oem-wifi-credentials
-Version: 1.0
-Depends: libubus, libubox, libuci
-Section: base
-Category: Base system
-Title: OEM WiFi Credential Generator
-Maintainer: Raskan <raskan23@gmail.com>
-Source: https://github.com/raskil5/wifac.git
-Description: Generates OEM-style WiFi credentials based on MAC address.
