@@ -1,0 +1,8 @@
+#!/bin/sh
+[ "$ACTION" = "ifup" ] && [ "$INTERFACE" = "wan" ] || exit 0
+[ -f /etc/wifi_persisted ] && exit 0
+
+uci -q set wireless.@wifi-iface[0].oem_persist=1
+uci -q set wireless.@wifi-iface[1].oem_persist=1
+uci commit wireless
+touch /etc/wifi_persisted
